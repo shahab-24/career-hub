@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 
 const Header = () => {
-  const Links = <>
+  const links = <>
   <li><NavLink to="/">Home</NavLink></li>
   <li><NavLink to="/jobs">Jobs</NavLink></li>
   <li><NavLink to="/applied">Applied jobs</NavLink></li>
@@ -17,26 +17,20 @@ const Header = () => {
       </div>
       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
         
-          <li><NavLink to="/">Home</NavLink></li>
-          <li><NavLink to="/jobs">Jobs</NavLink></li>
-          <li><NavLink to="/applied">Applied jobs</NavLink></li>
-          <li><NavLink to="blogs">Blogs</NavLink></li>
+        {links}
         
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <a className="btn btn-ghost text-xl">CaReeR Hub</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-    <li><NavLink to="/">Home</NavLink></li>
-  <li><NavLink to="/jobs">Jobs</NavLink></li>
-  <li><NavLink to="/applied">Applied jobs</NavLink></li>
-  <li><NavLink to="blogs">Blogs</NavLink></li>
+   {links}
       
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+    <a className="btn">Apply Now</a>
   </div>
 </div>
   );
